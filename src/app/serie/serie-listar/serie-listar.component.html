@@ -1,0 +1,25 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Channel</th>
+      <th scope="col">Seasons</th>
+    </tr>
+  </thead>
+  <tbody class="table-active">
+    <tr *ngFor="let serie of series">
+      <th scope="row"> {{serie.id}}</th>
+      <td> 
+        <a class="link-offset-2 link-underline link-underline-opacity-0" href={{serie.poster}} target="_blank">
+         {{serie.name}} 
+        </a>
+      </td>
+      <td> {{serie.channel}} </td>
+      <td> {{serie.seasons}} </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<p>Seasons average: {{promedio}}</p>
